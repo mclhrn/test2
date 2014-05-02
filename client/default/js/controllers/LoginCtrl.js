@@ -34,8 +34,10 @@ angular.module('emp-dir').controller('LoginCtrl',['$scope','$state', 'UserServic
           function(){
             // Get user's additional information
             EmpService.findByEN($scope.user.username).then(function(res){
-                UserService.setUserInfo(res);
-                UserNotificationService.hideLoading();
+                    UserNotificationService.hideLoading();
+
+                    UserService.setUserInfo(res);
+//                UserNotificationService.hideLoading();
               }
               //findByEN failed notify user
               , function(err){
