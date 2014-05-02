@@ -10,11 +10,11 @@
 }*/
  @font-face {
     font-family: Lato;
-    src: url(lib/fonts/Lato-Reg.ttf);
+    src: url(../lib/fonts/Lato-Reg.ttf);
 }
 @font-face {
     font-family: Lato-Black;
-    src: url(lib/fonts/Lato-Bla.ttf);
+    src: url(../lib/fonts/Lato-Bla.ttf);
 }
 /* styles to override ionic*/
  body, input, textarea {
@@ -58,7 +58,7 @@ body {
     font-family:"Lato-Black", Futura, Arial, sans-serif;
     font-weight: bold;
     font-size: 14px;
-    background: url(img/icons/login.png) no-repeat 96% center;
+    background: url(../img/login.png) no-repeat 96% center;
     background-size:27px 27px;
     background-color: #504144;
     -webkit-border-radius: 5px;
@@ -73,11 +73,11 @@ body {
     /*font-family:"Lato", Futura, Arial, sans-serif;*/
 }
 .username-field span:first-child {
-    background: url(img/icons/username.png) no-repeat 4% center;
+    background: url(../img/username.png) no-repeat 4% center;
     background-size:27px 27px;
 }
 .password-field span:first-child {
-    background: url(img/icons/password.png) no-repeat 4% center;
+    background: url(../img/password.png) no-repeat 4% center;
     background-size:27px 27px;
 }
 .password-field .item, .username-field .item {
