@@ -1,0 +1,92 @@
+info it worked if it ends with ok
+info using fhc@0.11.5-446
+info using node@v0.10.26
+silly config file /Users/michaelhearne/.fhcrc
+silly config file /usr/local/etc/fhcrc
+verbose feedhenry url https://baystate.feedhenry.com
+silly get container Getting app container from url: https://baystate.feedhenry.com/, domain: baystate
+verbose feedhenry url https://baystate.feedhenry.com/
+silly POST box/srv/1.1/ide/baystate/app/read
+silly url, unparsed https://baystate.feedhenry.com/
+verbose resolveUrl - IN box/srv/1.1/ide/baystate/app/read
+verbose resolveUrl - OUT https://baystate.feedhenry.com/box/srv/1.1/ide/baystate/app/read
+verbose calling url https://baystate.feedhenry.com/box/srv/1.1/ide/baystate/app/read payload: { payload: { guid: 'LjQtjYh_UHS-xdraaXR6vCTk' } }
+silly port 443
+silly cookie feedhenry=aA1DntA6tCAC_O8p2SFQrTMv;
+silly nocache false
+silly explain level 0
+verbose getHeaders { accept: 'application/json',
+verbose getHeaders   cookie: 'feedhenry=aA1DntA6tCAC_O8p2SFQrTMv;',
+verbose getHeaders   'User-Agent': 'FHC/0.11.5-446 darwin/13.1.0',
+verbose getHeaders   'content-type': 'application/json',
+verbose getHeaders   'content-length': 47 }
+verbose what... { payload: { guid: 'LjQtjYh_UHS-xdraaXR6vCTk' } }
+silly writing json { payload: { guid: 'LjQtjYh_UHS-xdraaXR6vCTk' } }
+silly headers { accept: 'application/json',
+silly headers   cookie: 'feedhenry=aA1DntA6tCAC_O8p2SFQrTMv;',
+silly headers   'User-Agent': 'FHC/0.11.5-446 darwin/13.1.0',
+silly headers   'content-type': 'application/json',
+silly headers   'content-length': 47 }
+silly getProxy null
+silly response headers { date: 'Wed, 30 Apr 2014 12:43:35 GMT',
+silly response headers   p3p: 'CP="ALL ADM DEV PSAi COM OUR OTRo STP IND ONL" policyref="/box/p3p.xml"',
+silly response headers   etag: '"VOPDuQcjwiZXTmHBOoDvY-"',
+silly response headers   'content-type': 'application/json;charset=UTF-8',
+silly response headers   'content-length': '4089',
+silly response headers   vary: 'Accept-Encoding',
+silly response headers   'keep-alive': 'timeout=15, max=100',
+silly response headers   connection: 'Keep-Alive' }
+silly 
+> kerberos@0.0.3 install /Users/michaelhearne/Documents/Workspace/Projects/Baystate/Employee Directory/Source Code/emp_directory/cloud/node_modules/fh-db/node_modules/mongodb/node_modules/kerberos
+> (node-gyp rebuild 2> builderror.log) || (exit 0)
+
+  CXX(target) Release/obj.target/kerberos/lib/kerberos.o
+  CXX(target) Release/obj.target/kerberos/lib/worker.o
+  CC(target) Release/obj.target/kerberos/lib/kerberosgss.o
+  CC(target) Release/obj.target/kerberos/lib/base64.o
+  CXX(target) Release/obj.target/kerberos/lib/kerberos_context.o
+  SOLINK_MODULE(target) Release/kerberos.node
+  SOLINK_MODULE(target) Release/kerberos.node: Finished
+
+> bson@0.2.2 install /Users/michaelhearne/Documents/Workspace/Projects/Baystate/Employee Directory/Source Code/emp_directory/cloud/node_modules/fh-db/node_modules/mongodb/node_modules/bson
+> (node-gyp rebuild 2> builderror.log) || (exit 0)
+
+  CXX(target) Release/obj.target/bson/ext/bson.o
+  SOLINK_MODULE(target) Release/bson.node
+  SOLINK_MODULE(target) Release/bson.node: Finished
+fh-db@0.4.11-264 node_modules/fh-db
+├── async@0.2.9
+├── lodash@2.4.1
+└── mongodb@1.3.19 (kerberos@0.0.3, bson@0.2.2)
+ npm install fh-db stdout
+silly npm WARN package.json EmpDirApp@0.1.1 No repository field.
+npm WARN package.json fh-api@0.2.5 No repository field.
+npm WARN package.json fh-nodeapp@0.65.0 No repository field.
+npm WARN package.json fh-webapp@0.6.7 No repository field.
+npm http GET https://registry.npmjs.org/fh-db
+npm http 200 https://registry.npmjs.org/fh-db
+npm http GET https://registry.npmjs.org/mongodb/1.3.19
+npm http GET https://registry.npmjs.org/lodash
+npm http GET https://registry.npmjs.org/async/0.2.9
+npm http 200 https://registry.npmjs.org/lodash
+npm http 200 https://registry.npmjs.org/async/0.2.9
+npm http GET https://registry.npmjs.org/async/-/async-0.2.9.tgz
+npm http 200 https://registry.npmjs.org/mongodb/1.3.19
+npm http GET https://registry.npmjs.org/mongodb/-/mongodb-1.3.19.tgz
+npm http 200 https://registry.npmjs.org/async/-/async-0.2.9.tgz
+npm http 200 https://registry.npmjs.org/mongodb/-/mongodb-1.3.19.tgz
+npm http GET https://registry.npmjs.org/bson/0.2.2
+npm http GET https://registry.npmjs.org/kerberos/0.0.3
+npm http 200 https://registry.npmjs.org/bson/0.2.2
+npm http GET https://registry.npmjs.org/bson/-/bson-0.2.2.tgz
+npm http 200 https://registry.npmjs.org/kerberos/0.0.3
+npm http GET https://registry.npmjs.org/kerberos/-/kerberos-0.0.3.tgz
+npm http 200 https://registry.npmjs.org/bson/-/bson-0.2.2.tgz
+npm http 200 https://registry.npmjs.org/kerberos/-/kerberos-0.0.3.tgz
+ npm install fh-db stderr
+WARN application.js No existing application.js file, creating
+ERR! Error: ENOENT, open './cloud/application.js'
+ERR! 
+ERR! System Darwin 13.1.0
+ERR! command "node" "/usr/local/bin/fhc" "local" "LjQtjYh_UHS-xdraaXR6vCTk"
+verbose exit [ 34, true ]

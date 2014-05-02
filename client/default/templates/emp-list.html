@@ -1,0 +1,48 @@
+<!-- 
+  This template gets placed in the index.html <nav-view> directive.
+  It was wired up in the app config (app.js) 
+  The 'employees' data comes from its $scope within EmpListCtrl (controller.js)
+-->
+<view title="'SEARCH EMPLOYEES'" hide-back-button="false" id="setVisible">
+
+    <!--<h1 class="login-title">Employee Directory</h1>-->
+
+  <div class="bar bar-subheader item-input-inset">
+    <form name="searchForm" class="force-width">
+      <label class="item-input-wrapper">
+        <i class="icon placeholder-icon ion-ios7-search"></i>
+        <input id="searchStr"
+               name="searchStr"
+               type="search"
+               placeholder="ENTER LAST NAME"
+               ng-model="searchStr"
+               autocorrect="off"
+               ng-minlength="2"
+               required>
+        <i class="clear-search icon ion-ios7-close-outline" ng-click="clearSearch()"></i>
+      </label>
+    </form>
+    <button class="button button-clear" ng-click="search()" ng-show="searchForm.searchStr.$valid && searchForm.searchStr.$dirty">Search</button>
+  </div>
+  <!--Notification bar-->
+  <!--<div class="bar bar-msg-subheader" ng-class="notifType" ng-show="displayNotif">
+    {{notifContent}}
+  </div>-->
+  <notification-bar class="bar-msg-subheader"></notification-bar>
+  <content has-header="true" has-subheader="true" ng-class="{'has-msg': displayNotif}">
+    <!--<div class="card text-center"  ng-if="employees.length === 0">
+      <div class="item item-text-wrap">
+        Nothing to display...
+      </div>
+    </div>-->
+    <list class="list">
+      <a class="item" ng-repeat="employee in employees" type="item-text-wrap" href="#/employee/{{employee.sequence}}">
+        <p>
+          {{employee.firstname}} <b>{{employee.lastname}}</b>
+            <br>{{employee.title}}
+            <br>{{employee.department}}
+        </p>
+      </a>
+    </list>
+  </content>
+</view>

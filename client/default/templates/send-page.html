@@ -1,0 +1,78 @@
+<!--
+  This template loads for the 'send-page' state (app.js)
+  'employee' is a $scope variable created in the SendPageCtrl controller (controllers.js)
+  The SendPageCtrl pulls data from the EmpService service (service.js)
+  The EmpService service returns an array of employee data
+-->
+<view title="'SEND PAGE'"  right-buttons="rightButtons">
+  <!--Notification bar-->
+  <!--<div class="bar bar-msg" ng-class="notifType" ng-if="displayNotif">
+    {{notifContent}}
+  </div>-->
+  <notification-bar class="bar-msg"></notification-bar>
+  <content has-header="true" has-subheader="false" ng-class="{'has-msg': displayNotif}" padding="false">
+
+      <div id="send-to">TO</div>
+
+
+    <div class="list" id="send-to-details">
+        
+        <img src="../img/liz.png" />
+        
+        <span id="bold-name">{{employee.lastname}} {{employee.firstname}}</span>
+        <p>{{employee.title}}</p>
+        <p>Pager: {{employee.pager}}</p>
+        <p>Pager Status: {{employee.pagerStatus}}</p>
+    </div>
+
+    <div class="list">
+      <form novalidate="novalidate"
+            on-valid-submit="sendPage()"
+            name="sendPageForm">
+        <!--<label class="item item-input validated row">-->
+          <!--<span class="input-label col col-33">From</span>-->
+          <!--<input type="text"-->
+                 <!--placeholder="Your Name"-->
+                 <!--name="fromName"-->
+                 <!--ng-model="data.fromName"-->
+                 <!--required>-->
+            <!--<i class="icon ion-alert-circled error col col-10"></i>-->
+        <!--</label>-->
+        <!--<label class="item item-input validated row">-->
+          <!--<span class="input-label col col-33">Callback#</span>-->
+          <!--<input type="text"-->
+                 <!--placeholder="Your Number"-->
+                 <!--ng-pattern="/^[0-9]+$/"-->
+                 <!--name="callbackNum"-->
+                 <!--ng-model="data.callbackNum">-->
+            <!--<i class="icon ion-alert-circled error col col-10"></i>-->
+        <!--</label>-->
+        <label class="item item-input item-stacked-label validated">
+          <p class="input-label col col-33" id="text-area-label">PAGE TEXT</p>
+          <textarea placeholder="Enter page text"
+                    name="pageTextInput"
+                    ng-model="data.pageTextInput"
+                    required>
+          </textarea>
+          <i class="icon ion-alert-circled error col col-10"></i>
+        </label>
+        <!--<i>Total: {{data.pageTextInput.length + data.fromName.length + data.callbackNum.length}}</i>-->
+        <!--<label class="item item-icon-right" ng-model="test" integer-->
+               <!--ng-class="{'has-error': data.charactersRemaining < 0}">-->
+
+          <!--Remaining characters-->
+            <!--<span class="badge"-->
+                  <!--ng-class="data.charactersRemaining < 0?'badge-assertive':'badge-balanced'">-->
+              <!--{{data.charactersRemaining}}-->
+            <!--</span>-->
+        <!--</label>-->
+
+        <!--ng-disabled="sendPageForm.$invalid"-->
+      </form>
+    </div>
+
+
+      <button type="submit" id="login-send-page"
+              class="button button-positive button-block">Send Page</button>
+  </content>
+</view>

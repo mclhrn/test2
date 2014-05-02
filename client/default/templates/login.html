@@ -1,0 +1,40 @@
+<!--
+  This template loads for the 'tab.adopt' state (app.js)
+-->
+<view title="'EMPLOYEE DIRECTORY'" hide-back-button="true">
+    <!--Notification bar-->
+    <!--<div class="bar bar-msg" ng-class="notifType" ng-if="displayNotif">
+    {{notifContent}}
+  </div>-->
+    <notification-bar class="bar-msg"></notification-bar>
+    <content has-header="false" has-subheader="true">
+
+        <h1 class="login-title">Employee Directory</h1>
+
+        <form novalidate="novalidate" on-valid-submit="doLogin()" name="loginForm">
+
+            <div class="username-field">
+                <label class="item item-input validated row">
+                    <span class="input-label col col-33"></span>
+                    <input type="text" ng-model="user.username" placeholder="USERNAME" required name="username" ng-pattern="/^[a-z]{2}[0-9]+$/i">
+                    <i class="icon ion-alert-circled error col col-10"></i>
+                </label>
+            </div>
+            <div class="password-field">
+                <label class="item item-input validated row">
+                    <span class="input-label col col-33"></span>
+                    <input type="password" ng-model="user.password" name="password" placeholder="PASSWORD" required="required">
+                    <i class="icon ion-alert-circled error col col-10"></i>
+                </label>
+                <!--<toggle name="rmbrInd" ng-model="user.rmbrInd">Remember me</toggle>-->
+            </div>
+
+            <div class="padding">
+                <button id="login" type="submit" class="button button-positive button-block">LOGIN</button>
+                <div class="forgot-password">
+                    Forgot your password?
+                    </span>
+                </div>
+        </form>
+    </content>
+</view>

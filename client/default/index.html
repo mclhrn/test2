@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Employee Directory</title>
+
+    <!-- ionic css -->
+    <link href="lib/css/ionic.css" rel="stylesheet">
+
+    <!-- your app's css -->
+    <link href="css/app.css" rel="stylesheet">
+
+    <!-- angularjs scripts -->
+    <<script src="lib/js/ionic.js"></script>
+    <script src="lib/js/angular/angular.js"></script>
+    <script src="lib/js/angular/angular-animate.js"></script>
+    <script src="lib/js/angular/angular-sanitize.js"></script>
+    <script src="lib/js/angular/angular-touch.js"></script>
+    <script src="lib/js/angular-ui/angular-ui-router.js"></script>
+    <script src="lib/js/ionic-angular.js"></script>
+    <!--bower components-->
+    <!--<script src="bower_components/ng-act/src/Act.js"></script>-->
+
+    <!-- your app's script -->
+    <script src="js/app.js"></script>
+    <!--Custom AngularJs directives-->
+    <script src="js/directives/FormDrctvs.js"></script>
+    <script src="js/directives/NotificationBar.js"></script>
+    <!--Services-->
+    <script src="js/services/NetworkService.js"></script>
+    <script src="js/services/ConstantsService.js"></script>
+    <script src="js/services/UserNotificationService.js"></script>
+    <script src="js/services/CloudCall.js"></script>
+    <script src="js/services/UserService.js"></script>
+    <script src="js/services/EmpService.js"></script>
+    <script src="js/services/PageService.js"></script>
+
+    <!--Controllers-->
+    <script src="js/controllers/LoginCtrl.js"></script>
+    <script src="js/controllers/EmpListCtrl.js"></script>
+    <script src="js/controllers/EmpDetailCtrl.js"></script>
+    <script src="js/controllers/SendPageCtrl.js"></script>
+    <!--FH SDK shim-->
+    <!--Need this to run the app outside fhc local-->
+    <!--<script>
+      if(window.$fh === undefined) {
+        var fh_script = document.createElement('script');
+        fh_script.setAttribute('src', 'bower_components/fh-js-sdk/dist/feedhenry-latest.js');
+        document.head.appendChild(fh_script);
+        var config = {
+          host: "http://127.0.0.1:8000",
+          appid: "v3Xob18AdVoAvv7diHZVWiym",
+          appkey: "b37f9ae0b44c0c1814c291a8df610ad1f0fee246",
+          mode: "dev"
+        };
+        window.onload = function(){
+          $fh.init(config, function (res) {
+            // SDK initialised, callback action here
+            console.log('fh initialized');
+          }, function (err) {
+            // SDK initialise failed, callback action here
+            console.log('fh not initialized');
+          });
+        }
+      }
+    </script>-->
+  </head>
+  <!--
+    'emp-dir' is the name of this angular module (js/app.js)
+  -->
+  <body ng-app="emp-dir" animation="slide-left-right-ios7">
+
+    <!-- 
+      The nav bar that will be updated as we navigate between views
+      Additional attributes set its look, nav-bar animation and icons
+      Icons provided by Ionicons: http://ionicons.com/ 
+    -->
+    <nav-bar type="bar-positive"
+             animation="nav-title-slide-ios7" 
+             back-button-type="button-icon" 
+             back-button-icon="ion-ios7-arrow-back">
+             </nav-bar>
+
+    <!-- 
+      The views will be rendered in the <nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <nav-view></nav-view>
+
+  </body>
+</html>

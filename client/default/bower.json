@@ -1,0 +1,24 @@
+{
+  "name": "emp-dir",
+  "version": "0.1.1",
+  "authors": [
+    "Oleksiy Kononenko"
+  ],
+  "license": "none",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "chai": "~1.9.1",
+    "mocha": "~1.18.2"
+  },
+  "dependencies": {
+    "ng-act": "~0.0.1",
+    "fh-js-sdk": "~1.1.4"
+  }
+}

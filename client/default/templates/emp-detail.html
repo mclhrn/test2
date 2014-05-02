@@ -1,0 +1,91 @@
+<!--
+  This template loads for the 'emp-detail' state (app.js)
+  'employee' is a $scope variable created in the EmpDetailCtrl controller (controllers.js)
+  The EmpDetailCtrl pulls data from the EmpService service (service.js)
+  The EmpService service returns an array of employee data
+-->
+<view title="'DETAILS'" right-buttons="rightButtons">
+    <!--Notification bar-->
+    <!--<div class="bar bar-msg" ng-class="notifType" ng-if="displayNotif">
+      {{notifContent}}
+    </div>-->
+    <notification-bar class="bar-msg"></notification-bar>
+    <content has-header="true" hes-padding="true">
+        <div class="card" id="detail-title">
+            <div class="item item-thumbnail-left item-text-wrap" id="emp-name-block">
+                <img id="profile-image" src="../img/liz.png" width="100" height="100"/>
+
+                <div id="emp-name">{{employee.lastname}} {{employee.firstname}}</div>
+                <div id="emp-name-titles">
+                    <p>{{employee.title}}</p>
+
+                    <p>{{employee.department}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="list card" id="list-top-margin">
+            <a class="item item-icon-right profile-details-phone reduce-padding" href="tel:{{employee.phone_full}}"
+               ng-if="employee.phone_full.length > 0">
+                <!--<i class="icon placeholder-icon ion-ios7-telephone"></i>-->
+                Call Phone
+                <p>{{employee.phone_full}}</p>
+            </a>
+            <a class="item item-icon-right profile-details-phone reduce-padding" href="tel:{{employee.phone}}"
+               ng-if="employee.phone.length > 0">
+                <!--<i class="icon placeholder-icon ion-ios7-telephone"></i>-->
+                Call Extension
+                <p>{{employee.phone}}</p>
+            </a>
+            <a class="item item-icon-right reduce-padding" id="profile-details-page" href="#/employee/{{employee.sequence}}/sendpage"
+               ng-if="employee.pager.length > 0">
+                <!--<i class="icon placeholder-icon ion-chatbox-working"></i>-->
+                Send Page<p>{{employee.pager}}</p>
+            </a>
+            <a class="item item-icon-right reduce-padding" id="profile-details-mail" href="mailto:{{employee.email}}"
+               ng-if="employee.email.length > 0">
+                <!--<i class="icon placeholder-icon ion-ios7-email"></i>-->
+                Email
+                <p>{{employee.email}}</p>
+            </a>
+            <a class="item item-icon-right reduce-padding" id="profile-details-location" href="maps:{{employee.location}}"
+               ng-if="employee.location.length > 0">
+                <!--<i class="icon placeholder-icon ion-ios7-location"></i>-->
+                Location
+                <p>{{employee.location}}</p>
+            </a>
+        </div>
+    </content>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
