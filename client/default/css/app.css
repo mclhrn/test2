@@ -399,13 +399,14 @@ div#no-padding {
 }
 
 
-#send-to-details img {
+.img-holder {
     position: absolute;
     z-index: 99;
     top: -15px;
     right: 15px;
     width: 70px;
     height: 70px;
+    background: url(../img/liz.png) no-repeat
 }
 
 #send-to {
