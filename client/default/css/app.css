@@ -333,6 +333,7 @@ form.ng-submitted input.ng-valid + i.icon.error, form.ng-submitted textarea.ng-v
 }
 
 #emp-name-block {
+    position: relative;
     padding-top: 0;
     padding-right: 0;
 }
@@ -399,14 +400,25 @@ div#no-padding {
 }
 
 
-.img-holder {
+.img-large-holder {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: url(../img/liz.png) no-repeat
+}
+
+
+.img-thumb-holder {
     position: absolute;
     z-index: 99;
     top: -15px;
     right: 15px;
     width: 70px;
     height: 70px;
-    background: url(../img/liz.png) no-repeat
+    background: url(../img/liz-thumg.png) no-repeat
 }
 
 #send-to {
