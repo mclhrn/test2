@@ -407,7 +407,8 @@ div#no-padding {
     left: 0;
     width: 100px;
     height: 100px;
-    background: url(../img/liz.png) no-repeat
+    background: url(../img/liz.png) no-repeat;
+    margin: 0;
 }
 
 
@@ -418,7 +419,7 @@ div#no-padding {
     right: 15px;
     width: 70px;
     height: 70px;
-    background: url(../img/liz-thumg.png) no-repeat
+    background: url(../img/liz-thumg.png) no-repeat;
 }
 
 #send-to {
