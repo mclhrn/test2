@@ -23,24 +23,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/default/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.346154" vertical-offset="6736" max-vertical-offset="7665">
-              <caret line="467" column="1" selection-start-line="467" selection-start-column="1" selection-end-line="467" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.28082192" vertical-offset="6976" max-vertical-offset="7695">
+              <caret line="476" column="17" selection-start-line="476" selection-start-column="17" selection-end-line="476" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="emp-list.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="emp-list.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/default/templates/emp-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4764398" vertical-offset="432" max-vertical-offset="1155">
-              <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#view#0;n#!!top" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-2.4" vertical-offset="60" max-vertical-offset="1140">
+              <caret line="12" column="36" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -149,8 +147,8 @@
         <option value="$PROJECT_DIR$/client/default/templates/send-page.html" />
         <option value="$PROJECT_DIR$/client/default/templates/login.html" />
         <option value="$PROJECT_DIR$/client/default/lib/js/ionic-angular.js" />
-        <option value="$PROJECT_DIR$/client/default/css/app.css" />
         <option value="$PROJECT_DIR$/client/default/templates/emp-list.html" />
+        <option value="$PROJECT_DIR$/client/default/css/app.css" />
       </list>
     </option>
   </component>
@@ -455,9 +453,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="163" max-vertical-offset="810">
           <caret line="38" column="20" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#view#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -837,21 +833,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/default/css/app.css">
+    <entry file="file://$PROJECT_DIR$/client/default/templates/emp-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.346154" vertical-offset="6736" max-vertical-offset="7665">
-          <caret line="467" column="1" selection-start-line="467" selection-start-column="1" selection-end-line="467" selection-end-column="1" />
+        <state vertical-scroll-proportion="-2.4" vertical-offset="60" max-vertical-offset="1140">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/default/templates/emp-list.html">
+    <entry file="file://$PROJECT_DIR$/client/default/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4764398" vertical-offset="432" max-vertical-offset="1155">
-          <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#view#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.28082192" vertical-offset="6976" max-vertical-offset="7695">
+          <caret line="476" column="17" selection-start-line="476" selection-start-column="17" selection-end-line="476" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>

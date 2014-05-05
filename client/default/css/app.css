@@ -138,7 +138,7 @@ a.item:after {
     display: block;
     height: 24px;
     /* starts right below a normal subheader header */
-    top: 98px;
+    top: 104px;
     /* make the text centered vertically and horizontally */
     text-align: center;
     padding: 0;
@@ -308,10 +308,12 @@ form.ng-submitted input.ng-valid + i.icon.error, form.ng-submitted textarea.ng-v
     visibility:visible;
 }
 
+
 .list {
     margin-left: -30px;
     margin-right: -30px;
 }
+
 
 .list a:hover {
     background-color:#eeeeee;
@@ -332,11 +334,13 @@ form.ng-submitted input.ng-valid + i.icon.error, form.ng-submitted textarea.ng-v
     padding-bottom: 5px;
 }
 
+
 #emp-name-block {
     position: relative;
     padding-top: 0;
     padding-right: 0;
 }
+
 
 #emp-name-titles {
     padding-left: 10px;
@@ -443,9 +447,8 @@ div#no-padding {
     font-family:"Lato-Black", Futura, Arial, sans-serif;
     font-weight: bold;
     font-size: 14px;
-    background: url(../img/send-page-white.png) no-repeat 96% center;
+    background: #504144 url(../img/send-page-white.png) no-repeat 96% center;
     background-size:27px 27px;
-    background-color: #504144;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -455,6 +458,8 @@ div#no-padding {
 
 #search-bar-bg {
     max-width: 640px;
+    margin-top: 6px;
+    margin-bottom: 10px;
 }
 
 
@@ -469,15 +474,12 @@ div#no-padding {
 
 #search {
     color: #ffffff;
-    width: 120px;
+    padding: 0 10px;
     height: 27px;
     font-family:"Lato-Black", Futura, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    background: #504144 url(../img/search-arrow.png) no-repeat 96% center;
+    font-size: 12px;
+    background: #504144;
     background-size:27px 27px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;
 }
 
