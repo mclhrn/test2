@@ -454,14 +454,7 @@ div#no-padding {
 
 
 #search-bar-bg {
-    background-color: #ecece8;
-}
-
-
-.search-field span:first-child {
-    background: url(../img/search.png) no-repeat 1% center;
-    background-size:27px 27px;
-    border: 1px solid red;
+    max-width: 640px;
 }
 
 
@@ -476,7 +469,7 @@ div#no-padding {
 
 #search {
     color: #ffffff;
-    width: 160px;
+    width: 120px;
     height: 27px;
     font-family:"Lato-Black", Futura, Arial, sans-serif;
     font-weight: bold;
