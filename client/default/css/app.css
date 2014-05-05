@@ -138,7 +138,7 @@ a.item:after {
     display: block;
     height: 24px;
     /* starts right below a normal subheader header */
-    top: 88px;
+    top: 98px;
     /* make the text centered vertically and horizontally */
     text-align: center;
     padding: 0;
@@ -395,20 +395,16 @@ div#no-padding {
     background-color: #eaeaea;
     padding: 10px;
     margin-bottom: 0;
-    /*background: url(../img/liz.png) no-repeat 94% -20%;*/
-    /*background-size:70px 70px;*/
 }
 
 
-.img-large-holder {
+#send-to-details img {
     position: absolute;
     z-index: 99;
-    top: 0;
-    left: 0;
-    width: 105px;
-    height: 105px;
-    background: url(../img/liz.png) no-repeat;
-    margin: 0;
+    top: -15px;
+    right: 15px;
+    width: 70px;
+    height: 70px;
 }
 
 
@@ -419,7 +415,6 @@ div#no-padding {
     right: 15px;
     width: 70px;
     height: 70px;
-    background: url(../img/liz-thumg.png) no-repeat;
 }
 
 #send-to {
@@ -457,6 +452,46 @@ div#no-padding {
     text-transform: uppercase;
 }
 
+
+#search-bar-bg {
+    background-color: #ecece8;
+}
+
+
+.search-field span:first-child {
+    background: url(../img/search.png) no-repeat 1% center;
+    background-size:27px 27px;
+    border: 1px solid red;
+}
+
+
+#searchStr {
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    border: 1px solid #C1C1BF;
+    background: #ffffff url(../img/search.png) no-repeat 90% center;
+    background-size:27px 27px;
+}
+
+#search {
+    color: #ffffff;
+    width: 160px;
+    height: 27px;
+    font-family:"Lato-Black", Futura, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    background: #504144 url(../img/search-arrow.png) no-repeat 96% center;
+    background-size:27px 27px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/*#searchStr {*/
+    /*border: 1px solid red;*/
+    /*background-color: #ffffff;*/
+/*}*/
 
 /*#profile-details-icons {*/
     /*position: absolute;*/

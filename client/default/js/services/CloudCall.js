@@ -4,7 +4,7 @@
 
 'use strict';
 angular.module('emp-dir').factory('CloudCall',['$q', '$state', '$log', '$rootScope', '$location', 'ConstantsService'
-  , function($q, $state, $log, $rootScope, $location, ConstantsService) {
+  , function($q, $state, $log, $rootxScope, $location, ConstantsService) {
 
     function _callCloud(methodName, data) {
       var deferred = $q.defer();
